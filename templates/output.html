@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generated Text</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Generated Text:</h1>
+    <p>{{ generated_text }}</p>
+    <h2>Entities:</h2>
+    <ul>
+        {% for entity in entities %}
+        <li>{{ entity }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
